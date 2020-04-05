@@ -42,6 +42,7 @@
             android:layout_height="wrap_content"
             android:text="Add"
             android:textColor="@color/colorAccent"/>
+
     </LinearLayout>
 
     <ListView

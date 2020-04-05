@@ -1,39 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:padding="8dp">
 
-    <TextView
-        android:id="@+id/textViewNama"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_weight="8"
-        android:text="Civer Yoshioka"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textViewUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textViewDelete"
-        android:layout_toStartOf="@+id/textViewDelete"
-        android:layout_toLeftOf="@+id/textViewDelete"
-        android:padding="5dp"
-        android:text="Update"
-        android:textColor="@color/colorUpdate"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
 
-    <TextView
-        android:id="@+id/textViewDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:padding="5dp"
-        android:text="Delete"
-        android:textColor="@color/colorDelete"
-        android:textStyle="bold" />
+            android:src="@drawable/profile" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:text="Civer Yoshioka"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textViewUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewDelete"
+            android:layout_toStartOf="@+id/textViewDelete"
+            android:layout_toLeftOf="@+id/textViewDelete"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:text="Update"
+            android:textColor="@color/colorUpdate"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:text="Delete"
+            android:textColor="@color/colorDelete"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

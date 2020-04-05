@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
     ListView listView;
     Button buttonAddUpdate;
+//    ImageView imageProfile;
 
     List<Mahasiswa> mahasiswaList;
     boolean isUpdating = false;
